@@ -75,11 +75,10 @@ function showProposal() {
     //...
 });
 
-  //showFinalText()
-
   noButton.addEventListener('click', function() {
     document.getElementById('message').innerHTML = 'Pleaseeeee🥺👉🏼👈🏼'
     document.getElementById('anim3').style.display = 'block';
+    document.getElementById('anim4').style.display = 'none'
     var buttonsContainer = document.createElement('p')
     var yesButton = createButton('Okayy babyy')
     var noButton = createButton('No')
@@ -87,7 +86,7 @@ function showProposal() {
     buttonsContainer.appendChild(noButton)
     document.getElementById('message').appendChild(buttonsContainer)
     document.getElementById('confetti').style.display = 'none'
-    //petals()
+  
 
     yesButton.addEventListener('click', function() {
       document.getElementById('message').innerHTML = 'Thanks my love!❤❤😘 I love you.😘'
@@ -99,7 +98,6 @@ function showProposal() {
         document.getElementById('container').style.display = 'none'
         
       }, 10000) 
-      //showFinalText()
     })
   })
 }
